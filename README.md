@@ -80,13 +80,13 @@ engine = create_engine(db_url, echo=True)
 **Build Command**
 
 ``` bash
-pip install -U poetry && poetry install --no-root
+pip install -U poetry && poetry install
 ```
 
 **Start Command**
 
 ``` bash
-poetry run uvicorn server:app --host 0.0.0.0 --port $PORT
+uvicorn server:server --host 0.0.0.0  --port $PORT
 ```
 
 ------------------------------------------------------------------------
