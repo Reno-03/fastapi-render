@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Example of FastAPI deployment to render.com"
 authors = ["Jose Haro Peralta <jose@microapis.io>"]
 readme = "README.md"
+packages = [{include = "fastapi_render"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -15,4 +16,5 @@ psycopg2-binary = "^2.9.9"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
 
